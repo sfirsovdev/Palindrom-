@@ -1,10 +1,7 @@
-function palindrom(str) {
+const palindrom = str => {
     //нижний регистр
     str = str.toLowerCase();
-    //строку в массив
-    let str2 = str.split('');
-
-    return str2;
+    return str == str.split('').reverse().join('');
 }
-
-console.log(palindrom('hello'));
+console.log(palindrom('abba'));
+ 
